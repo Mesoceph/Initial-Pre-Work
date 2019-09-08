@@ -1,0 +1,38 @@
+<!--This lesson covers a much more concise way to define different margin values to different sides of an element.  Rather than using the separate margin-top, margin-right, margin-bottom, and margin-left properties, margin can be specified using values listed clockwise starting at the top (e.g. top right bottom left) in a single line and separated by one space.  This eliminates unnecessary extra lines of code.-->
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin: 40px 20px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
