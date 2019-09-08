@@ -1,0 +1,16 @@
+<!--This lesson explains that subsequent class declarations in the style block will be given priority over previous class declarations.  It is important to note that the order in which classes are listed within the element's class attribute does not matter.-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
