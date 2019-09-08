@@ -1,35 +1,26 @@
-<!--This lesson reviews how to use the text-align property for styling.  Options include center, left, right, and justify.-->
+<!--This lesson introduces the concept of flex boxes that allow more flexible, responsive page design.  To create flex boxes, use the style property "display" with the value "flex".-->
 
 <style>
-  h4 {
-    text-align: center;
+  #box-container {
+    height: 500px;
+    display: flex;
   }
-  p {
-    text-align: justify;
-  }
-  .links {
-    margin-right: 20px;
+
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
 
   }
-  .fullCard {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 5px;
-    padding: 4px;
-  }
-  .cardContent {
-    padding: 10px;
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+
   }
 </style>
-<div class="fullCard">
-  <div class="cardContent">
-    <div class="cardText">
-      <h4>Google</h4>
-      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
-    </div>
-    <div class="cardLinks">
-      <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
-      <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
-    </div>
-  </div>
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
 </div>
