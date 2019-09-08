@@ -1,0 +1,19 @@
+<!--This lesson covers the !important keyword that can be used to override all other styling (from element, class, and ID selectors, and from inline styling).  This can be useful if using a CSS library that overrides some of your styling inadvertently.-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
