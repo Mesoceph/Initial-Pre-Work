@@ -1,0 +1,19 @@
+<!--This lesson continues to elaborate on specificity rules by demonstrating that inline styling will override styling provided by class and ID selectors.  However, given that IDs should be unique to a given element, it is hard for me to imagine the practical situation in which a developer would use inline styling to override ID styling.-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
