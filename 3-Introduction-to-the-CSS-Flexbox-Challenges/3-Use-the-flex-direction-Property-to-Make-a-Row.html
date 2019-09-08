@@ -1,0 +1,25 @@
+<!--This lesson taught me about the flex-direction property that can be used with flex containers.  This property defines in which direction items will be added to the container.  The default value is row, which is why items were added to the line until the line filled up in the previous two lessons.  However, other values for flex-direction include row-reverse, which adds items to the line from right to left instead of from left to right, column, which adds items into a column from top to bottom, and column-reverse, which adds items to columns from bottom to top.-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: row-reverse;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
