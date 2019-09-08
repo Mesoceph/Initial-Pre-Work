@@ -1,0 +1,14 @@
+<!--In this lesson, we learned that some older browsers- specifically IE- do not support CSS variables.  To increase browser compatibility, it is recommended to provide a default property value declaration before using a variable to define the property value.  That way, if viewed in an older browser, the property can still display using the first value declaration, while newer browsers can use the CSS variable declaration to view the element with its updated value.-->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
