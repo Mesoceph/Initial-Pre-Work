@@ -1,0 +1,50 @@
+<!--This lesson explains that the default behavior of a flex container is to fit all items along the main axis in a single row or column, even if that means reducing the size of the elements to make them fit.  Alternatively, wrapping behavior can be set with the flex-wrap property.  Possible values are nowrap, which is default and does not allow wrapping, wrap, which wraps items left-to-right or top-to-bottom for rows and columns, or wrap-reverse, which wraps from right-to-left or bottom-to-top for rows and columns.-->
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+  }
+  #box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+  }
+  #box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+  }
+  #box-5 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+  }
+  #box-6 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+  <div id="box-4"></div>
+  <div id="box-5"></div>
+  <div id="box-6"></div>
+</div>
