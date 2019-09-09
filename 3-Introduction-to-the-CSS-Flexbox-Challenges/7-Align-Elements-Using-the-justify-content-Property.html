@@ -1,0 +1,26 @@
+<!--This lesson introduced the property justify-content, which is used to control the alignment of elements within a flex container.  Values for the property include center, which moves the elements to the center of the container, flex-start, which moves elements to the start of the container (left for rows, top for columns), flex-end, which moves elements to the end of the container (right for rows, bottom for columns), space-between, which forces the first and last items to the start and end of the container with elements spaced evenly in between, and space-around, which aligns all elements around the center of the main axis with even space before and after each element.  These options provide great flexibility in designing the format of a page.-->
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
