@@ -1,0 +1,26 @@
+<!--This lesson introduces the final flex item property, align-self.  This property allows the developer to change the cross-axis alignment of flex items independently of each other and overrides the value of the align-items property.  It takes the same values as the align-items property.-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
