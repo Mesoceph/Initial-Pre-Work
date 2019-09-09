@@ -1,0 +1,26 @@
+<!--This lesson introduces the align-items property, which controls the alignment of elements on the cross axis that runs perpendicular to the main axis.  The values include center, flex-start, and flex-end, which all have the same meaning as they have for the justify-content property (but in this case are measured on the cross axis and not the main axis).  Also included are values of stretch, which stretches the elements to fill the container along the cross axis, and baseline, which aligns text elements to the row on which the letters sit.-->
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p>Hello</p></div>
+  <div id="box-2"><p>Goodbye</p></div>
+</div>
