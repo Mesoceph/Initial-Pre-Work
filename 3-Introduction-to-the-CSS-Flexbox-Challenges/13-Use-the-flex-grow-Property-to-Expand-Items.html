@@ -1,0 +1,25 @@
+<!--This lesson introduces the flex-grow property, which is the opposite of the flex-shrink property from the last lesson.  The flex-grow property causes the elements to fill the main axis of their container, and the values assigned to each element indicate how much that element should grow (proportionally) to fill the main axis.-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
