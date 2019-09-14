@@ -1,0 +1,35 @@
+<!--This lesson introduces the grid-column property.  This property acts not on the container, but on an element within the container.  It defines how many columns an element should occupy using the concept of lines.  Lines create the vertical and horizontal boundaries of the container and its rows and columns.  Line 1 starts in the upper left-hand corner and defines the top of the container and the left side of the container.  The lines then count up downward (for rows) and to the right (for columns).  The grid-column property takes as input the starting and stopping lines for the element in the format [starting line number]/[stopping line number].-->
+
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+
+  .item5 {
+    background: PaleGreen;
+    /* add your code below this line */
+    grid-column: 2/4;
+
+    /* add your code above this line */
+  }
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
